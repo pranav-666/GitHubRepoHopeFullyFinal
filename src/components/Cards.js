@@ -6,8 +6,8 @@ function Cards() {
   return (
     <>
       <div className='cards'>
-        
-        {/* New Section: Three Blocks */}
+
+        {/* Info Blocks */}
         <div className='info-blocks'>
           <div className='info-box'>
             <h2>₹30,000</h2>
@@ -25,6 +25,7 @@ function Cards() {
           </div>
         </div>
 
+        {/* About Section */}
         <h1>About RoTech</h1>
         <div className='cards__container'>
           <div className='cards__wrapper'>
@@ -47,47 +48,38 @@ function Cards() {
         <div className='timeline'>
           <h2>Event Timeline</h2>
           <ul className='timeline-list'>
-            <li>
-              <span className='timeline-date'>10:00 AM</span>
-              <span className='timeline-event'>Opening Ceremony</span>
-            </li>
-            <li>
-              <span className='timeline-date'>11:00 AM</span>
-              <span className='timeline-event'>Problem Statement Reveal</span>
-            </li>
-            <li>
-              <span className='timeline-date'>12:00 PM</span>
-              <span className='timeline-event'>Coding Begins</span>
-            </li>
-            <li>
-              <span className='timeline-date'>4:00 PM</span>
-              <span className='timeline-event'>Mentorship Round</span>
-            </li>
-            <li>
-              <span className='timeline-date'>8:00 PM</span>
-              <span className='timeline-event'>Final Submissions</span>
-            </li>
-            <li>
-              <span className='timeline-date'>9:00 PM</span>
-              <span className='timeline-event'>Winner Announcement</span>
-            </li>
+            <li><span className='timeline-date'>6:30 AM</span><span className='timeline-event'>Reporting</span></li>
+            <li><span className='timeline-date'>7:00 AM</span><span className='timeline-event'>Final Check-ins</span></li>
+            <li><span className='timeline-date'>7:30 AM</span><span className='timeline-event'>Hacking Session Starts</span></li>
+            <li><span className='timeline-date'>9:30 AM</span><span className='timeline-event'>Breakfast Distribution</span></li>
+            <li><span className='timeline-date'>1:00 PM</span><span className='timeline-event'>Lunch Distribution</span></li>
+            <li><span className='timeline-date'>5:30 PM</span><span className='timeline-event'>High Tea</span></li>
+            <li><span className='timeline-date'>6:00 PM</span><span className='timeline-event'>Judges Arrive</span></li>
+            <li><span className='timeline-date'>6:30 PM</span><span className='timeline-event'>Judging & Evaluation Begins</span></li>
+            <li><span className='timeline-date'>7:45 PM</span><span className='timeline-event'>Closing Ceremony</span></li>
+            <li><span className='timeline-date'>8:30 PM</span><span className='timeline-event'>Results Announcement</span></li>
           </ul>
         </div>
 
         {/* OC Committee Section */}
-        <div className='oc-committee'>
-          <h2>OC Committee</h2>
-          <div className='oc-committee__grid'>
-            <img src='/IMG-20250226-WA0214.jpg' alt='OC Member 1' />
-            <img src='/IMG-20250226-WA0212.jpg' alt='OC Member 2' />
-            <img src='/IMG-20250226-WA0213.jpg' alt='OC Member 3' />
-            <img src='/IMG-20250226-WA0210.jpg' alt='OC Member 4' />
-            <img src='/3.jpg' alt='OC Member 5' />
-            <img src='/2.jpg' alt='OC Member 6' />
-            <img src='/1000001.jpg' alt='OC Member 7' />
-            <img src='/images/member8.png' alt='OC Member 8' />
-            <img src='/1.jpg' alt='OC Member 9' />
+        <div className="oc-committee">
+          <div>
+            <h2 className="core-heading">Core Committee</h2>
+            <ul className="committee-list">
+              <li className="committee-member">Vinit Jain</li>
+              <li className="committee-member">Arjun Raja</li>
+              <li className="committee-member">Aman Agarwal</li>
+              <li className="committee-member">Pavitra</li>
+              <li className="committee-member">Syed Imran</li>
+              <li className="committee-member">Varsha</li>
+            </ul>
           </div>
+          <h2 className="oc-heading">OC Committee</h2>
+          <ul className="committee-list">
+            <li className="committee-member">Nagpranav N</li>
+            <li className="committee-member">Durgashree</li>
+            <li className="committee-member">Alok Aeri</li>
+          </ul>
         </div>
 
         {/* Sponsors Section */}

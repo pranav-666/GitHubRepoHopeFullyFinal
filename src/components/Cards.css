@@ -1,245 +1,115 @@
+/* Keyframes for Animations */
 @keyframes popup {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+  from {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
 }
 
 .block {
-    animation: popup 0.6s ease-out;
-    opacity: 0;
-    transform: scale(0.8);
-    animation-fill-mode: forwards;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+  animation: popup 0.6s ease-out;
+  opacity: 0;
+  transform: scale(0.8);
+  animation-fill-mode: forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
-  .background-spline {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Push it behind other elements */
+/* General Styling */
+.background-spline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .cards {
-    position: relative; /* Ensure content stays above the background */
-    padding: 4rem;
-    background: transparent;
-}
-  
-  h1 {
-    text-align: center;
-  }
-  
-  .cards__container {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    max-width: 1120px;
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  .cards__wrapper {
-    position: relative;
-    margin: 30px 0 45px;
-  }
-  
-  .cards__items {
-    margin-bottom: 24px;
-  }
-  
-  .cards__item {
-    display: flex;
-    flex: 1;
-    margin: 0 1rem;
-    border-radius: 10px;
-    align-items: center;
-    
-    width: 100%;
-    box-shadow: 0 6px 20px rgba(81, 1, 1, 0.518);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(255, 56, 56, 0.017));
-    filter: drop-shadow(0 6px 28px rgba(255, 56, 56, 0.017));
-    border-radius: 10px;
-    text-decoration: none;
-  }
-  
-  .cards__item__info {
-    padding: 30px 30px 30px 30px;
-  }
-  
-  .cards__item__text {
-    color: #252e48;
-    font-size: 18px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    line-height: 27px;
-    text-align: justify;
-  }
-/* OC Committee Section */
-.oc-committee {
+  position: relative;
+  padding: 4rem;
+  background: transparent;
   text-align: center;
-  margin: 50px 0;
-  padding: 20px;
-  background-color: #f8f8f8; /* Light background */
-  border-radius: 10px;
-  width: 800px;
-  margin-left:  245px;
-  margin-top: 25px;
+  font-family: Arial, sans-serif;
 }
 
-.oc-committee h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
-  text-transform: uppercase;
-  font-weight: bold;
+h1 {
+  text-align: center;
+  margin-top: 50px;
 }
 
-/* OC Committee Grid */
-.oc-committee__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-  gap: 20px;
-  justify-content: center;
+.cards__container {
+  display: flex;
+  flex-flow: column;
   align-items: center;
-  max-width: 900px;
+  max-width: 1120px;
+  width: 90%;
   margin: 0 auto;
-  padding: 10px;
-  padding-left: 70px;
 }
 
-/* OC Committee Images */
-.oc-committee__grid img {
-  width: 100%;
-  max-width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+.cards__wrapper {
+  position: relative;
+  margin-top: 50px;
 }
 
-/* Hover Effect */
-.oc-committee__grid img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.cards__items {
+  margin-bottom: 24px;
 }
 
-/* Responsive Grid */
-@media (max-width: 768px) {
-  .oc-committee__grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
-  }
-}
-
-@media (max-width: 480px) {
-  .oc-committee__grid {
-    grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
-  }
-}
-
-
-
-/* Sponsors Section */
-.sponsors {
-  margin-top: 40px;
-  text-align: center;
-  padding: 20px;
-  background-color: #fff; /* White background */
+.cards__item {
+  display: flex;
+  flex: 1;
+  margin: 0 1rem;
   border-radius: 10px;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(81, 1, 1, 0.518);
+  filter: drop-shadow(0 6px 28px rgba(255, 56, 56, 0.017));
+  text-decoration: none;
 }
 
-.sponsors h2 {
+.cards__item__info {
+  padding: 30px;
+}
+
+.cards__item__text {
+  color: #252e48;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 27px;
+  text-align: justify;
+}
+
+/* About Rotech */
+.about-rotech {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about-rotech h1 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #222;
-  text-transform: uppercase;
-  font-weight: bold;
 }
 
-/* Sponsors Scroll */
-.sponsors__scroll {
-  display: flex;
-  overflow-x: auto;
-  gap: 20px;
-  padding: 10px;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
-  white-space: nowrap;
-  justify-content: center;
+.about-rotech p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #444;
 }
 
-/* Sponsor Logos */
-.sponsors__scroll img {
-  width: 150px;
-  height: auto;
-  border-radius: 10px;
-  flex-shrink: 0;
-  scroll-snap-align: center;
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Hover Effect */
-.sponsors__scroll img:hover {
-  transform: scale(1.1);
-}
-
-/* Hide scrollbar for Chrome & Edge */
-.sponsors__scroll::-webkit-scrollbar {
-  display: none;
-}
-/* Info Blocks (Prize Pool, Brochure, Registration Fee) */
-.info-blocks {
-  display: flex;
-  justify-content: center;
-  gap: 30px; /* Space between blocks */
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
-.info-box {
-  background: #222; /* Dark background */
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  width: 200px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-}
-
-.info-box h2 {
-  font-size: 1.8rem;
-  margin-bottom: 5px;
-}
-
-.info-box p {
-  font-size: 1rem;
-}
-
-/* Hover Effect */
-.info-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Brochure Box Special Styling */
-.brochure a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-}
 /* Timeline Section */
 .timeline {
-  margin: 50px auto;
-  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  padding: 50px 20px;
 }
 
 .timeline h2 {
@@ -250,65 +120,153 @@
 .timeline-list {
   list-style: none;
   padding: 0;
-  position: relative;
-}
-
-.timeline-list::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  width: 4px;
-  height: 100%;
-  background-color: #ccc;
-  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
 }
 
 .timeline-list li {
-  position: relative;
-  width: 50%;
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
   background: #f4f4f4;
+  padding: 15px;
   border-radius: 8px;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.timeline-list li:nth-child(odd) {
-  left: 0;
-}
-
-.timeline-list li:nth-child(even) {
-  left: 50%;
-  text-align: right;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
 }
 
 .timeline-date {
   font-weight: bold;
+  color: #444;
+}
+
+/* OC Committee */
+.oc-committee {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  width: 800px;
+}
+
+.oc-committee h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
   color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.committee-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.committee-member {
+  background: #f4f4f4;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Sponsors Section */
+.sponsors {
+  margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.sponsors__scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scrollbar-width: none;
+  white-space: nowrap;
+  justify-content: center;
+}
+
+.sponsors__scroll img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sponsors__scroll img:hover {
+  transform: scale(1.1);
+}
+
+.sponsors__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Info Blocks (Prize Pool, Brochure, Registration Fee) */
+.info-blocks {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.info-box {
+  background: #22222200;
+  color: #070000;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.info-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.brochure a {
+  text-decoration: none;
+  color: #080101;
   display: block;
 }
 
-.timeline-event {
-  font-size: 1rem;
-  color: #555;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .oc-committee {
+      width: 90%;
+  }
+  .timeline-list {
+      max-width: 100%;
+  }
+  .info-blocks {
+      flex-direction: column;
+      align-items: center;
+  }
+  .timeline-list li {
+      width: 90%;
+  }
 }
 
-/* Connecting Dots */
-.timeline-list li::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 15px;
-  height: 15px;
-  background: #ff5722;
-  border-radius: 50%;
-  transform: translateY(-50%);
-}
-
-.timeline-list li:nth-child(odd)::before {
-  right: -10px;
-}
-
-.timeline-list li:nth-child(even)::before {
-  left: -10px;
+@media (max-width: 480px) {
+  .timeline-list li {
+      flex-direction: column;
+      text-align: center;
+  }
+  .oc-committee {
+      width: 100%;
+  }
 }
