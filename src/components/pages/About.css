@@ -1,0 +1,66 @@
+/* Ensure the main container takes the full height */
+.rules-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #f9f9f9;
+    padding: 0px;
+}
+
+/* Wrap the content so footer stays at the bottom */
+.rules-content {
+    flex: 1; /* Allows it to take up remaining space */
+    max-width: 900px;
+    margin: 50px auto 100px auto; /* Keeps spacing consistent */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.rules-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Subtitle Styling */
+.rules-subtitle {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #555;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* List Styling */
+.rules-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.rules-list li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* Paragraph Styling */
+.rules-content p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Ensure footer extends completely */
+.footer-container {
+    width: 100%;
+    background-color: #222; /* Dark background for visibility */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
