@@ -10,7 +10,7 @@ function Cards() {
         {/* Info Blocks */}
         <div className='info-blocks'>
           <div className='info-box'>
-            <h2>₹30,000</h2>
+            <h2>₹25,000+</h2>
             <p>Prize Pool</p>
           </div>
           <div className='info-box brochure'>
@@ -22,6 +22,10 @@ function Cards() {
           <div className='info-box'>
             <h2>₹400</h2>
             <p>Registration Fee</p>
+          </div>
+          <div className='info-box'>
+            <a href="https://forms.gle/ARjJg6NTHuu4bnvB9"><h2>Participate</h2></a>
+            <p>Click Here</p>
           </div>
         </div>
 
@@ -86,13 +90,9 @@ function Cards() {
         <div className='sponsors'>
           <h2>Our Sponsors</h2>
           <div className='sponsors__scroll'>
-            <img src='/101.jpeg' alt='Sponsor 1' />
-            <img src='/101.jpeg' alt='Sponsor 2' />
-            <img src='/101.jpeg' alt='Sponsor 3' />
-            <img src='/101.jpeg' alt='Sponsor 4' />
-            <img src='/101.jpeg' alt='Sponsor 5' />
-            <img src='/101.jpeg' alt='Sponsor 6' />
-            <img src='/101.jpeg' alt='Sponsor 7' />
+            <img src='/104.png' alt='Sponsor 1' />
+            <img src='/102.jpg' alt='Sponsor 2' />
+            <img src='/103.png' alt='Sponsor 3' />
           </div>
         </div>
       </div>

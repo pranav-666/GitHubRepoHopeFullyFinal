@@ -15,27 +15,26 @@ export default function RulesAndRegulations() {
             Attendees from all backgrounds, genders, and geographies are welcome. 
             There is no age restriction to attend the hackathon. In case you are under 18, 
             your parents/legal guardian should contact the hackathon to request a waiver 
-            authorizing you to attend.
+            authorizing you to attend and submit a plan for your attendance and transportation.
           </p>
         </section>
 
         <section>
           <h2 className='rules-subtitle'>Team Formation</h2>
           <ul className='rules-list'>
-            <li>Teams can consist of at least two members to a maximum of four members.</li>
-            <li>Changes to team members are not permitted after Friday, March 14, at 12:00 Noon.</li>
-            <li>Exceptions can be made on a case-by-case basis as decided by the rules committee.</li>
+            <li>Teams must have between two and four members.</li>
+            <li>Changes to team members are not allowed after Friday, March 14, at 12:00 Noon.</li>
+            <li>Exceptions may be granted at the discretion of the rules committee.</li>
           </ul>
         </section>
 
         <section>
           <h2 className='rules-subtitle'>Project Development</h2>
           <ul className='rules-list'>
-            <li>No development may start before the actual event date and time.</li>
-            <li>Any software tools, game engines, IDEs, and programming languages can be used.</li>
-            <li>All code must be created only at the hackathon. Publicly available APIs and SDKs are allowed.</li>
-            <li>Only one entry per team is permitted.</li>
-            <li>All intellectual property must be open-source.</li>
+            <li>Development must begin only during the hackathon event.</li>
+            <li>Any software tools, game engines, IDEs, and programming languages may be used.</li>
+            <li>All code must be written at the hackathon, except for publicly available APIs and SDKs.</li>
+            <li>Each team is allowed only one submission.</li>
             <li>Projects violating the code of conduct will be disqualified.</li>
           </ul>
         </section>
@@ -43,18 +42,19 @@ export default function RulesAndRegulations() {
         <section>
           <h2 className='rules-subtitle'>Project Submission</h2>
           <ul className='rules-list'>
-            <li>Teams must register on DevPost and list their project details.</li>
-            <li>Projects must be submitted to the hackathon GitHub account before Saturday, March 15 at 7:00 pm.</li>
-            <li>Submissions will be reviewed for originality and compliance with open-source licenses.</li>
-            <li>Finalist projects will undergo code review.</li>
+            <li>Teams must have a team name and be registered on GitHub.</li>
+            <li>A PowerPoint presentation is required, including team details, project summary, tools used, and a GitHub link.</li>
+            <li>Projects must be submitted to the hackathon GitHub before Saturday, March 15, at 7:00 pm.</li>
+            <li>Finalist projects will undergo a code review to verify originality.</li>
           </ul>
         </section>
 
         <section>
           <h2 className='rules-subtitle'>Attendee Code of Conduct</h2>
           <p>
-            We are dedicated to providing a harassment-free experience for everyone. 
-            Harassment in any form will not be tolerated. Violations may result in expulsion from the hackathon.
+            Our hackathon is committed to providing a harassment-free experience for all participants. 
+            Harassment of any kind, including but not limited to verbal comments, inappropriate imagery, or intimidation, will not be tolerated. 
+            Violators may be sanctioned or expelled at the discretion of the organizers.
           </p>
         </section>
       </main>

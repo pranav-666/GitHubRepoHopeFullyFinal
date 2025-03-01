@@ -5,23 +5,15 @@ import './Impact.css';
 
 const opportunitiesData = [
   {
-    company: 'Tech Innovators Inc.',
+    company: 'Para',
     position: 'Software Engineer Intern',
-    description: 'Work on cutting-edge AI and ML projects with a dynamic team.',
-    deadline: 'March 15, 2025'
+    description: 'Real Time Deployement of developed product and internship oppurtunity',
   },
   {
-    company: 'CyberSecure Solutions',
-    position: 'Cybersecurity Analyst',
-    description: 'Analyze security vulnerabilities and implement advanced protection measures.',
-    deadline: 'April 10, 2025'
+    company: 'Various Startups',
+    position: 'Internship for various roles',
+    description: 'Guranteed Internship for participitants under industry experts',
   },
-  {
-    company: 'GreenTech Ventures',
-    position: 'Sustainable Systems Engineer',
-    description: 'Develop eco-friendly technological solutions for modern problems.',
-    deadline: 'May 5, 2025'
-  }
 ];
 
 export default function OpportunitiesPage() {
@@ -35,7 +27,6 @@ export default function OpportunitiesPage() {
               <h2 className='company-name'>{item.company}</h2>
               <p className='position-title'><strong>Position:</strong> {item.position}</p>
               <p className='description'>{item.description}</p>
-              <p className='deadline'><strong>Application Deadline:</strong> {item.deadline}</p>
             </div>
           ))}
         </div>
