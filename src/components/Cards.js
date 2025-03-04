@@ -14,7 +14,7 @@ function Cards() {
             <p>Prize Pool</p>
           </div>
           <div className='info-box brochure'>
-            <a href='/1001.pdf' download>
+            <a href='/ROTECH_Brochure.pdf' download>
               <h2>Download</h2>
               <p>Brochure</p>
             </a>
@@ -73,9 +73,9 @@ function Cards() {
               <li className="committee-member">Vinit Jain</li>
               <li className="committee-member">Arjun Raja</li>
               <li className="committee-member">Aman Agarwal</li>
-              <li className="committee-member">Pavitra</li>
-              <li className="committee-member">Syed Imran</li>
-              <li className="committee-member">Varsha</li>
+              <li className="committee-member">Pavithra Ganta</li>
+              <li className="committee-member">Syed Imran Asad</li>
+              <li className="committee-member">Varsha hedge</li>
             </ul>
           </div>
           <h2 className="oc-heading">OC Committee</h2>

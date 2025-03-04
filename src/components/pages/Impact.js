@@ -10,6 +10,11 @@ const opportunitiesData = [
     description: 'Real Time Deployement of developed product and internship oppurtunity',
   },
   {
+    company: 'Platform Commons',
+    position: 'Internship/Placement',
+  
+  },
+  {
     company: 'Various Startups',
     position: 'Internship for various roles',
     description: 'Guranteed Internship for participitants under industry experts',
